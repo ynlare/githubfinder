@@ -23,11 +23,11 @@ searchUser.addEventListener('keyup', (e) => {
       } else {
         // Show profile
         ui.showProfile(data.profile);
-      }
-    })
-  } else {
-    // Clear profile
-     ui.clearProfile();
-  }
-
+        ui.showRepos(data.repos);
+    }
+  })
+} else {
+  // Clear profile
+  ui.clearProfile();
+}
 }); 
